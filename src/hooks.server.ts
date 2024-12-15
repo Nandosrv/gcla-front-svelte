@@ -2,6 +2,8 @@ import type { DecodedTokenUser } from '$lib/interfaces/decodedTokenUser';
 import type { Handle } from '@sveltejs/kit';
 
 const node_env = process.env.NODE_ENV;
+console.log('node_ev', node_env);
+
 const apiUrl =
 	node_env != 'production' ? 'http://localhost:3000' : (process.env.PUBLIC_API_URL as string);
 
